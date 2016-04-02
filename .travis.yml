@@ -10,9 +10,6 @@ before_script:
   - sleep 1 # give server time to start
 
 script:
-  - cd rules
-  - ./test.sh
-  - cd ..
   - node_modules/.bin/karma start karma.conf.js --no-auto-watch --single-run --browsers=Firefox
   - codeclimate-test-reporter < coverage/*/lcov.info
 
