@@ -4,21 +4,23 @@ module.exports = function (config) {
         basePath: './',
 
         files: [
-            'app/bower_components/angular/angular.js',
-            'app/bower_components/angular-route/angular-route.js',
-            'app/bower_components/angular-mocks/angular-mocks.js',
-            'app/bower_components/mockfirebase/browser/mockfirebase.js',
-            'app/bower_components/angularfire/dist/angularfire.js',
-            'app/bower_components/underscore/underscore.js',
+            'bower_components/angular/angular.js',
+            'bower_components/angular-route/angular-route.js',
+            'bower_components/angular-mocks/angular-mocks.js',
+            'bower_components/mockfirebase/browser/mockfirebase.js',
+            'bower_components/angularfire/dist/angularfire.js',
+            'bower_components/underscore/underscore.js',
+            'app/config_sample.js',
             'app/app.js',
+            'app/components/*/*.js',
             'app/*/*.js'
         ],
 
         preprocessors: {
-            'app/{*/!(*_test).js}': [ 'coverage' ]
+            'app/{components/*/!(*_test).js,*/!(*_test).js}': ['coverage']
         },
 
-        reporters: [ 'progress', 'coverage' ],
+        reporters: ['progress', 'coverage'],
 
         autoWatch: true,
 
