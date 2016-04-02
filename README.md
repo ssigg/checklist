@@ -1,2 +1,2 @@
-# checklist
+# checklist [![Build Status](https://travis-ci.org/ssigg/checklist.svg?branch=master)](https://travis-ci.org/ssigg/checklist) [![Code Climate](https://codeclimate.com/github/ssigg/checklist/badges/gpa.svg)](https://codeclimate.com/github/ssigg/checklist) [![Test Coverage](https://codeclimate.com/github/ssigg/checklist/badges/coverage.svg)](https://codeclimate.com/github/ssigg/checklist/coverage)
 Create checklists for periodic tasks
