@@ -13,7 +13,11 @@ angular.module('checklist.create', [
 
     .controller('CreateCtrl', function ($scope, $location, fbobject) {
         $scope.create = function (name) {
-            var listRef = fbobject.create('/lists', {'name': name});
+            var data = {
+                'name': name,
+                'items': []
+            };
+            var listRef = fbobject.create('/lists', data);
             $location.path('/edit/' + listRef.key());
         }
     });

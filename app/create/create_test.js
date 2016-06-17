@@ -30,7 +30,7 @@ describe('checklist.create', function () {
                 var name = 'name';
                 expect(createSpy).not.toHaveBeenCalled();
                 scope.create(name);
-                expect(createSpy).toHaveBeenCalledWith('/lists', {'name': name});
+                expect(createSpy).toHaveBeenCalledWith('/lists', {'name': name, 'items': []});
             });
 
             it('should redirect to the created list', function () {

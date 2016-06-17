@@ -1,0 +1,5 @@
+<div id="content">
+    <h1 ng-repeat="item in items" ng-click="flip(item)" ng-class="{yes: item.checked, no: !item.checked}">{{item.name}}</h1>
+    <h1 class="action edit" ng-click="edit()">✐</h1>
+    <h1 class="action add" ng-click="create()">+</h1>
+</div>
